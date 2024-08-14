@@ -1,4 +1,4 @@
-package com.cpllabs.demo;
+package com.cpllabs.APK_Builder;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -10,8 +10,8 @@ import java.io.IOException;
 public class Main extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
+        FXMLLoader loader = new FXMLLoader(Main.class.getResource("hello-view.fxml"));
+        Scene scene = new Scene(loader.load());
         stage.setTitle("APK Builder");
         stage.setScene(scene);
         stage.show();

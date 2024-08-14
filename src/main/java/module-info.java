@@ -6,6 +6,6 @@ module com.cpllabs.demo {
     requires com.dlsc.formsfx;
     requires org.kordamp.bootstrapfx.core;
 
-    opens com.cpllabs.demo to javafx.fxml;
-    exports com.cpllabs.demo;
+    opens com.cpllabs.APK_Builder to javafx.fxml;
+    exports com.cpllabs.APK_Builder;
 }
