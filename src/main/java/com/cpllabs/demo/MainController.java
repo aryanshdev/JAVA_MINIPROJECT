@@ -105,7 +105,7 @@ public class MainController {
             outputAlert.setAlertType(Alert.AlertType.INFORMATION);
             outputAlert.setTitle("Success");
             outputAlert.setHeaderText(null);
-            outputAlert.setContentText("APKS Saved In " +  Paths.get(bundleLocation, "OUTPUT.apks"));
+            outputAlert.setContentText("APKS Saved As " +  Paths.get(outputLocation, "OUTPUT.apks"));
             outputAlert.show();
         }
         else {

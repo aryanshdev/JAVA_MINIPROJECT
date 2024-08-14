@@ -18,8 +18,6 @@ public class Builder {
         if (universalMode) {
             cmd += " --mode=universal";
         }
-
-        System.out.println(cmd);
         try {
             // Execute the command
             Process process = Runtime.getRuntime().exec(cmd);
