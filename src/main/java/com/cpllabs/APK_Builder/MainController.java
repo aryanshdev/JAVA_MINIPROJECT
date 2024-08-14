@@ -99,16 +99,15 @@ public class MainController {
         keyAppAlias = keyAlias.getText();
         keyPassword = keyPassIn.getText();
         boolean universal = buildUniversalCheckbox.isSelected();
-        int outputCode =  new Builder().buildAPKS(bundleLocation, outputLocation, keyStoreLocation, keyStorePassword,keyPassword, keyAppAlias, universal);
+        int outputCode = new Builder().buildAPKS(bundleLocation, outputLocation, keyStoreLocation, keyStorePassword, keyPassword, keyAppAlias, universal);
         Alert outputAlert = new Alert(Alert.AlertType.NONE);
         if (outputCode == 0) {
             outputAlert.setAlertType(Alert.AlertType.INFORMATION);
             outputAlert.setTitle("Success");
             outputAlert.setHeaderText(null);
-            outputAlert.setContentText("APKS Saved As " +  Paths.get(outputLocation, "OUTPUT.apks"));
+            outputAlert.setContentText("APKS Saved As " + Paths.get(outputLocation, "OUTPUT.apks"));
             outputAlert.show();
-        }
-        else {
+        } else {
             outputAlert.setAlertType(Alert.AlertType.ERROR);
             outputAlert.setTitle("Error");
             outputAlert.setHeaderText(null);

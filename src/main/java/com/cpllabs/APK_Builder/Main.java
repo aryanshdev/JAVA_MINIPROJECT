@@ -13,7 +13,8 @@ public class Main extends Application {
         FXMLLoader loader = new FXMLLoader(Main.class.getResource("hello-view.fxml"));
         Scene scene = new Scene(loader.load());
         stage.setTitle("APK Builder");
-        stage.setScene(scene);
+        stage.setResizable(false);
+        stage.setScene(scene); //set loaded scene as current-actice
         stage.show();
     }
 

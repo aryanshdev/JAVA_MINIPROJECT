@@ -10,15 +10,18 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane prefHeight="541.0" prefWidth="598.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cpllabs.APK_Builder.MainController">
+<Pane prefHeight="541.0" prefWidth="598.0" style="-fx-background-color: #212121;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cpllabs.APK_Builder.MainController">
    <children>
       <HBox alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="598.0" spacing="20.0">
          <children>
-            <Label text="Select App Bundle : " />
+            <Label text="Select App Bundle : " textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font></Label>
             <HBox alignment="CENTER_RIGHT" prefHeight="45.0" prefWidth="407.0" spacing="10.0">
                <children>
                   <TextField fx:id="bundlePath" prefHeight="26.0" prefWidth="299.0" promptText="AAB File Path" />
-                  <Button mnemonicParsing="false" onAction="#chooseAppBundle" prefHeight="30.0" prefWidth="78.0" text="Choose...">
+                  <Button mnemonicParsing="false" onAction="#chooseAppBundle" prefHeight="30.0" prefWidth="78.0" style="-fx-background-color: #4086f4; -fx-text-fill: white;" text="Choose...">
                      <font>
                         <Font name="Arial Bold" size="12.0" />
                      </font>
@@ -30,13 +33,16 @@
             <Insets bottom="10.0" left="10.0" right="10.0" top="25.0" />
          </padding>
       </HBox>
-      <HBox alignment="CENTER_LEFT" layoutY="80.0" prefHeight="80.0" prefWidth="598.0" spacing="20.0">
+      <HBox alignment="CENTER_LEFT" layoutY="80.0" prefHeight="66.0" prefWidth="598.0" spacing="20.0">
          <children>
-            <Label text="Select Output Folder : " />
-            <HBox alignment="CENTER_RIGHT" prefHeight="45.0" prefWidth="390.0" spacing="10.0">
+            <Label text="Select Output Folder : " textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font></Label>
+            <HBox alignment="CENTER_RIGHT" prefHeight="46.0" prefWidth="394.0" spacing="10.0">
                <children>
                   <TextField fx:id="outputPath" prefHeight="26.0" prefWidth="298.0" promptText="Output Path" />
-                  <Button mnemonicParsing="false" onAction="#chooseOutputFolder" text="Choose...">
+                  <Button mnemonicParsing="false" onAction="#chooseOutputFolder" prefHeight="30.0" prefWidth="78.0" style="-fx-background-color: #4086f4; -fx-text-fill: white;" text="Choose...">
                      <font>
                         <Font name="Arial Bold" size="12.0" />
                      </font>
@@ -45,19 +51,22 @@
             </HBox>
          </children>
          <padding>
-            <Insets bottom="10.0" left="10.0" right="10.0" top="25.0" />
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
          </padding>
       </HBox>
-      <CheckBox fx:id="keyStoreCheckBox" layoutX="14.0" layoutY="177.0" mnemonicParsing="false" onAction="#usingKeyStore" text="Using Keystore" />
+      <CheckBox fx:id="keyStoreCheckBox" layoutX="14.0" layoutY="177.0" mnemonicParsing="false" onAction="#usingKeyStore" text="Using Keystore" textFill="WHITE" />
       <Pane fx:id="keyStorePane" disable="true" layoutX="15.0" layoutY="212.0" prefHeight="213.0" prefWidth="569.0">
          <children>
             <HBox alignment="CENTER_LEFT" layoutY="8.0" prefHeight="49.0" prefWidth="569.0" spacing="20.0">
                <children>
-                  <Label text="Select KeyStore File : " />
+                  <Label text="Select KeyStore File : " textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font></Label>
                   <HBox alignment="CENTER_RIGHT" prefHeight="45.0" prefWidth="368.0" spacing="10.0">
                      <children>
                         <TextField fx:id="keyStorePathIn" prefHeight="26.0" prefWidth="281.0" promptText="KeyStore Path" />
-                        <Button mnemonicParsing="false" onAction="#chooseKeyStore" prefHeight="30.0" prefWidth="78.0" text="Choose...">
+                        <Button mnemonicParsing="false" onAction="#chooseKeyStore" prefHeight="30.0" prefWidth="78.0" style="-fx-background-color: #4086f4; -fx-text-fill: white;" text="Choose...">
                            <font>
                               <Font name="Arial Bold" size="12.0" />
                            </font>
@@ -71,10 +80,13 @@
             </HBox>
             <HBox fx:id="keyPasswordIn" alignment="CENTER_LEFT" layoutY="57.0" prefHeight="45.0" prefWidth="575.0" spacing="40.0">
                <children>
-                  <Label text="KeyStore Password :">
+                  <Label text="KeyStore Password :" textFill="WHITE">
                      <padding>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                      </padding>
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
                   </Label>
                   <PasswordField fx:id="keyStorePasswordIn" prefHeight="26.0" prefWidth="252.0" promptText="Enter Keystore Password" />
                </children>
@@ -84,10 +96,13 @@
             </HBox>
             <HBox alignment="CENTER_LEFT" layoutY="112.0" prefHeight="45.0" prefWidth="575.0" spacing="60.0">
                <children>
-                  <Label text="Key Alias/Name :">
+                  <Label text="Key Alias/Name :" textFill="WHITE">
                      <padding>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                      </padding>
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
                   </Label>
                   <TextField fx:id="keyAlias" prefHeight="26.0" prefWidth="246.0" promptText="Key Alias" />
                </children>
@@ -97,10 +112,13 @@
             </HBox>
             <HBox fx:id="keyPasswordIn1" alignment="CENTER_LEFT" layoutY="161.0" prefHeight="45.0" prefWidth="575.0" spacing="40.0">
                <children>
-                  <Label text="KeyStore Password :">
+                  <Label text="KeyStore Password :" textFill="WHITE">
                      <padding>
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                      </padding>
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
                   </Label>
                   <PasswordField fx:id="keyPassIn" prefHeight="26.0" prefWidth="252.0" promptText="Enter Key Password" />
                </children>
@@ -110,11 +128,11 @@
             </HBox>
          </children>
       </Pane>
-      <Button layoutX="453.0" layoutY="482.0" mnemonicParsing="false" onAction="#Build" text="Generate APKS ">
+      <Button layoutX="446.0" layoutY="482.0" mnemonicParsing="false" onAction="#Build" prefHeight="45.0" prefWidth="134.0" style="-fx-background-color: #4086f4; -fx-text-fill: white;" text="Generate APKS ">
          <font>
             <Font name="Arial Bold" size="14.0" />
          </font>
       </Button>
-      <CheckBox fx:id="buildUniversalCheckbox" layoutX="15.0" layoutY="447.0" mnemonicParsing="false" text="Build Universal APK" />
+      <CheckBox fx:id="buildUniversalCheckbox" layoutX="15.0" layoutY="447.0" mnemonicParsing="false" text="Build Universal APK" textFill="WHITE" />
    </children>
 </Pane>
