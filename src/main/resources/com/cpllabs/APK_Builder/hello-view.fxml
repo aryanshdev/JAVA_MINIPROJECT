@@ -2,6 +2,7 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
@@ -134,5 +135,6 @@
          </font>
       </Button>
       <CheckBox fx:id="buildUniversalCheckbox" layoutX="15.0" layoutY="447.0" mnemonicParsing="false" text="Build Universal APK" textFill="WHITE" />
+      <ButtonBar layoutX="325.0" layoutY="174.0" prefHeight="40.0" prefWidth="200.0" />
    </children>
 </Pane>

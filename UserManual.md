@@ -1,0 +1,9 @@
+## How To Use:
+- Extract Project and Open it in your IDE, eg Eclipse or IntelliJ
+- Download JavaFX SDK, You Can Download It From https://download2.gluonhq.com/openjfx/22.0.2/openjfx-22.0.2_windows-x64_bin-sdk.zip
+- Add JavaFX To Project, Steps To Add It Are :
+    - **Eclipse** : https://pragmaticways.com/how-to-add-javafx-to-eclipse-the-easy-way/
+    - **IntelliJ** : https://medium.com/@laszlo.szlatki/step-by-step-guide-on-how-to-set-up-javafx-on-intellij-41bab92dfc46
+    - **Preferred Method For IntelliJ** : On IntelliJ, Create a new JAVAFX project then copy paste files from src folder of this project to newly created Java Project in IntelliJ.
+      Also Copy lib Folder To The Newly created project.
+- Run Main.java
