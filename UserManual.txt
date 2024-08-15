@@ -1,3 +1,14 @@
+About Project
+Tried Solving a problem that everyone faces while building and testing apps in their Android Development process. The Problem of converting .aab (App Bundles) to .apks (A kind of Zip containing app files) and further .apk (Android App).
+
+Problem
+According To Google :
+"Important: From August 2021, new apps are required to publish with the Android App Bundle on Google Play."
+But App Bundle Can't be directly installed or directly run in Android. We need to convert it into .apk to do so. For Testing on real life devices, this is a very important and tedious task. The way to build .apk from .aab is to use .jar library provided by Google : bundletool, but it is a CLI library and required many arguments to be entered. hence a lot of scope for errors. Even a single typo can have you re-write all command and arguments again.
+
+Our Solution and Project
+Create CLI for using bundletool, now you don't have to write tedious commands again and again. Even if something fails, you can just click a button to try again !!
+
 How To Use:
 - Extract Project and Open it in your IDE, eg Eclipse or IntelliJ
 - Download JavaFX SDK, You Can Download It From https://download2.gluonhq.com/openjfx/22.0.2/openjfx-22.0.2_windows-x64_bin-sdk.zip
